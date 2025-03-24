@@ -44,7 +44,7 @@ const LoginSignup = () => {
           return;
         }
 
-        const response = await axios.post('http://localhost:3000/signup', {
+        const response = await axios.post('https://nevaloss-successstory.com/nest-js/signup/', {
           name: formData.name,
           email: formData.email,
           mobile: formData.mobile,
@@ -55,7 +55,7 @@ const LoginSignup = () => {
         setIsSignUp(false);
       } else {
         // Login API Call
-        const response = await axios.post('http://localhost:3000/signup/login', {
+        const response = await axios.post('https://nevaloss-successstory.com/nest-js/signup/login/', {
           email: formData.email,
           password: formData.password
         });
